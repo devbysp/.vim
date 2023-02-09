@@ -4,11 +4,11 @@
 let mapleader = "-"                                                             " Map leader key
 
 " Toggles file browsing window on and off
-nnoremap <M-1>                  :NERDTreeToggle<Enter>
-nnoremap <M-2>                  :NERDTreeFind<Enter>:noh<Enter>
+nnoremap <C-e>                  :NERDTreeToggle<Enter>
+nnoremap <C-r>                  :NERDTreeFind<Enter>:noh<Enter>
 
 " Create and navigate tabs
-nnoremap <C-t>                  :tabnew<Enter>
+nnoremap <C-w>t                 :tabnew<Enter>
 nnoremap <C-h>                  :tabprevious<Enter>
 nnoremap <C-l>                  :tabnext<Enter>
 nnoremap <C-Left>               :tabprevious<Enter>
@@ -28,10 +28,10 @@ nnoremap <C-y>                  :Goyo<Enter>
 inoremap <C-y>                  <ESC>:Goyo<Enter>
 
 " No highlight
-nnoremap <M-h>                  :noh<Enter>
+nnoremap <Leader>h              :noh<Enter>
 
 " Goto command line
-nnoremap <Enter>                :
+" nnoremap <Enter>              :
 
 " ------------------------------------------------------------------------------
 " GIT:
@@ -41,34 +41,34 @@ nnoremap <Enter>                :
 nnoremap <Leader>gd             :Diff<Enter>
 
 " Log
-nnoremap <M-l>                  :Log<Enter>
+nnoremap <Leader>lg             :Log<Enter>
 nnoremap <Leader>lb             :LogBranch<Space>
 
 " Push And Pull
 nnoremap <Leader>gu             :Upstream<space>
-nnoremap <M-p>                  :Push<Enter>
-nnoremap <M-p>f                 :ForcePush<Enter>
-nnoremap <M-u>                  :Pull<Enter>
+nnoremap <C-p>                  :Push<Enter>
+nnoremap <C-p>f                 :ForcePush<Enter>
+nnoremap <Leader>pl             :Pull<Enter>
 
 " Blame
-nnoremap <Leader>gb             :Blame<Enter>
+nnoremap <Leader>bl             :Blame<Enter>
 
 " Checkout
-nnoremap <Leader>gc             :Checkout<space>
-nnoremap <Leader>gbr            :CreateBranch<space>
+nnoremap <Leader>ch             :Checkout<space>
+nnoremap <Leader>cb             :CreateBranch<space>
 
 " Commit
-nnoremap <M-s>                  :GitStatus<Enter>
+nnoremap <C-g>                  :GitStatus<Enter>
 nnoremap <Leader>gs             :Status<Enter>
-nnoremap <M-a>                  :Add<space>*<Enter>
-nnoremap <M-c>                  :Commit<Enter>
-nnoremap <M-c>a                 :AmendCommit<Enter>
+nnoremap <C-a>                  :Add<space>*<Enter>
+nnoremap <C-k>                  :Commit<Enter>
+nnoremap <C-k>a                 :AmendCommit<Enter>
 
 " Merge Conflicts
 nnoremap <Leader>cf             :Conflicted<Enter>
 
 " Cherry Pick
-nnoremap <Leader>gcp            :Git cherry-pick<space>
+nnoremap <Leader>cp             :Git cherry-pick<space>
 
 " Stash
 nnoremap <Leader>st             :Stash<Enter>
@@ -91,37 +91,37 @@ nnoremap <Leader>fw             :Find<Space>"<cword>"<space>src<Enter>
 " -----------------------------------------------------------
 
 " Navigation
-nnoremap <leader>d              :Definition<Enter>
-nnoremap <leader>dv             :DefinitionVert<Enter>
-nnoremap <leader>ds             :DefinitionSplit<Enter>
-nnoremap <leader>rf             :References<Enter>
+nnoremap <Leader>d              :Definition<Enter>
+nnoremap <Leader>dv             :DefinitionVert<Enter>
+nnoremap <Leader>ds             :DefinitionSplit<Enter>
+nnoremap <Leader>rf             :References<Enter>
 
 " Refactoring
-nnoremap <leader>rn             :Rename<Enter>
-nnoremap <leader>fn             :FileRename<Enter>
-nnoremap <leader>im             :Import<Enter>
-nnoremap <leader>ca             :CodeAction<Enter>
+nnoremap <Leader>rn             :Rename<Enter>
+nnoremap <Leader>fn             :FileRename<Enter>
+nnoremap <Leader>im             :Import<Enter>
+nnoremap <Leader>ca             :CodeAction<Enter>
 
 " Navigate Errors
-nnoremap <C-n>                  :NextError<Enter>
-nnoremap <C-p>                  :PreviousError<Enter>
+nnoremap <Leader>n              :NextError<Enter>
+nnoremap <Leader>p              :PreviousError<Enter>
 
 " Display
-nnoremap <leader>dt             :Details<Enter>
-nnoremap <leader>hv             :Hover<Enter>
-nnoremap <leader>qf             :QuickFix<Enter>:copen<Enter>
+nnoremap <Leader>dt             :Details<Enter>
+nnoremap <Leader>hv             :Hover<Enter>
+nnoremap <Leader>qf             :QuickFix<Enter>:copen<Enter>
 
 " -----------------------------------------------------------
 " TERMINAL:
 " -----------------------------------------------------------
-nnoremap <M-t>                  :call TerminalWindow()<Enter>
+nnoremap <C-t>                  :call TerminalWindow()<Enter>
 
 " -----------------------------------------------------------
 " FORMATTERS:
 " -----------------------------------------------------------
-nnoremap <Leader>p              :call Prettier("%")<Enter><Enter>
+" nnoremap <Leader>p            :call Prettier("%")<Enter><Enter>
 
 " -----------------------------------------------------------
 " SNIPPESTS:
 " -----------------------------------------------------------
-nnoremap <Leader>cs             :execute(':r '.g:code_snippets_path.'/<cword>')<Enter>kdd
+inoremap <C-n>                  <ESC>:execute(':r '.g:code_snippets_path.'/<cword>')<Enter>kdd
