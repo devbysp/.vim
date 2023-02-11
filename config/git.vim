@@ -17,7 +17,7 @@ endfun
 command! Diff                   :vert Gdiffsplit
 
 " Log
-command! Log                    :GV HEAD master
+command! Log                    :GV --all
 command! -nargs=1 LogBranch     :GV HEAD <args>
 
 " Push And Pull
@@ -25,6 +25,7 @@ command! -nargs=1 Upstream      :Git push --set-upstream origin <args>
 command! Push                   :Git push
 command! ForcePush              :Git push -f
 command! Pull                   :Git pull
+command! Fetch                  :Git fetch
 
 " Blame
 command! Blame                  :Git blame

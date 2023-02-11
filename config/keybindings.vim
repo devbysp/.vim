@@ -5,7 +5,7 @@ let mapleader = "-"                                                             
 
 " Toggles file browsing window on and off
 nnoremap <C-e>                  :NERDTreeToggle<Enter>
-nnoremap <C-r>                  :NERDTreeFind<Enter>:noh<Enter>
+nnoremap <Leader>e              :NERDTreeFind<Enter>:noh<Enter>
 
 " Create and navigate tabs
 nnoremap <C-w>t                 :tabnew<Enter>
@@ -24,59 +24,22 @@ inoremap <C-c>                  <ESC>:wq<Enter>
 inoremap <C-x>                  <ESC>:q!<Enter>
 
 " Distraction free
-nnoremap <C-y>                  :Goyo<Enter>
-inoremap <C-y>                  <ESC>:Goyo<Enter>
+nnoremap <C-w>d                  :Goyo<Enter>
+inoremap <C-w>d                  <ESC>:Goyo<Enter>
 
 " No highlight
 nnoremap <Leader>h              :noh<Enter>
-
-" Goto command line
-" nnoremap <Enter>              :
 
 " ------------------------------------------------------------------------------
 " GIT:
 " ------------------------------------------------------------------------------
 
-" Changes
-nnoremap <Leader>gd             :Diff<Enter>
-
-" Log
-nnoremap <Leader>lg             :Log<Enter>
-nnoremap <Leader>lb             :LogBranch<Space>
-
-" Push And Pull
-nnoremap <Leader>gu             :Upstream<space>
-nnoremap <C-p>                  :Push<Enter>
-nnoremap <C-p>f                 :ForcePush<Enter>
-nnoremap <Leader>pl             :Pull<Enter>
-
-" Blame
-nnoremap <Leader>bl             :Blame<Enter>
-
-" Checkout
-nnoremap <Leader>ch             :Checkout<space>
-nnoremap <Leader>cb             :CreateBranch<space>
-
-" Commit
+nnoremap <C-d>                  :Diff<Enter>
+nnoremap <C-l>                  :Log<Enter>
 nnoremap <C-g>                  :GitStatus<Enter>
-nnoremap <Leader>gs             :Status<Enter>
 nnoremap <C-a>                  :Add<space>*<Enter>
 nnoremap <C-k>                  :Commit<Enter>
 nnoremap <C-k>a                 :AmendCommit<Enter>
-
-" Merge Conflicts
-nnoremap <Leader>cf             :Conflicted<Enter>
-
-" Cherry Pick
-nnoremap <Leader>cp             :Git cherry-pick<space>
-
-" Stash
-nnoremap <Leader>st             :Stash<Enter>
-nnoremap <Leader>sp             :Pop<Enter>
-nnoremap <Leader>sa             :Apply<Enter>
-nnoremap <Leader>sw             :StashShow<Enter>
-nnoremap <Leader>sl             :StashList<Enter>
-nnoremap <Leader>sd             :StashDrop
 
 " -----------------------------------------------------------
 " FIND IN FILES:
@@ -124,4 +87,4 @@ nnoremap <C-t>                  :call TerminalWindow()<Enter>
 " -----------------------------------------------------------
 " SNIPPESTS:
 " -----------------------------------------------------------
-inoremap <C-n>                  <ESC>:execute(':r '.g:code_snippets_path.'/<cword>')<Enter>kdd
+inoremap <C-y>                  <ESC>:execute(':r '.g:code_snippets_path.'/<cword>')<Enter>kdd

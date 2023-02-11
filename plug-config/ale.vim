@@ -15,7 +15,7 @@ let g:ale_fixers = {
 \}
 
 let g:ale_linters = {
-\   'html': [ 'htmlhint'],
+\   'html': [ 'prettier'],
 \   'css': [ 'stylelint'],
 \   'typescript': ['tslint', 'tsserver'],
 \   'typescriptreact': ['tslint', 'tsserver']
