@@ -9,6 +9,14 @@ function! GitStatusWindow()
     vertical resize 80
 endfun
 
+function! FileHistory(file)
+    silent execute ":GV --follow --" expand(a:file)
+endfun
+
+function! FileHistoryForCurrentLine(file, line)
+    silent execute ":GV -L".line(a:line).",+1:".expand(a:file)
+endfun
+
 " -----------------------------------------------------------
 " CUSTOM COMMANDS:
 " -----------------------------------------------------------
@@ -19,6 +27,8 @@ command! Diff                   :vert Gdiffsplit
 " Log
 command! Log                    :GV --all
 command! -nargs=1 LogBranch     :GV HEAD <args>
+command! History                :call FileHistory("%")
+command! HistoryForLine         :call FileHistoryForCurrentLine("%", ".")
 
 " Push And Pull
 command! -nargs=1 Upstream      :Git push --set-upstream origin <args>

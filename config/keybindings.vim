@@ -33,9 +33,10 @@ nnoremap <Leader>h              :noh<Enter>
 " ------------------------------------------------------------------------------
 " GIT:
 " ------------------------------------------------------------------------------
-
 nnoremap <C-d>                  :Diff<Enter>
 nnoremap <C-l>                  :Log<Enter>
+nnoremap <C-q>                  :History<Enter>
+nnoremap <C-q>l                 :HistoryForLine<Enter>
 nnoremap <C-g>                  :GitStatus<Enter>
 nnoremap <C-a>                  :Add<space>*<Enter>
 nnoremap <C-k>                  :Commit<Enter>
