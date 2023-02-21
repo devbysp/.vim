@@ -7,5 +7,3 @@ function! TerminalWindow()
     setlocal winfixheight
     resize 10
 endfun
-
-nnoremap <leader>t              :call TerminalWindow()<Enter>
