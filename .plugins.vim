@@ -17,6 +17,8 @@ call plug#begin(g:bundle_path)
     Plug 'https://github.com/dense-analysis/ale'                                " LSP client
     Plug 'https://github.com/vim-scripts/loremipsum'                            " Loremipsum generator
     Plug 'https://github.com/alvan/vim-closetag'                                " Auto close html tags
+    Plug 'https://github.com/mattn/emmet-vim'                                   " Html tag generator
+    Plug 'https://github.com/manzeloth/live-server'                             " Live Server
 call plug#end()
 
 " If bundle directory does not exists the run the PlugInstall command
