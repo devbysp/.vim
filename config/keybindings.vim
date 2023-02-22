@@ -88,4 +88,5 @@ nnoremap <C-t>                  :call TerminalWindow()<Enter>
 " -----------------------------------------------------------
 " SNIPPESTS:
 " -----------------------------------------------------------
-inoremap <C-y>                  <ESC>:execute(':r '.g:code_snippets_path.'/<cword>')<Enter>kdd
+" Using emmet plugint instead. Hotkey is the same.
+" inoremap <C-y>                  <ESC>:execute(':r '.g:code_snippets_path.'/<cword>')<Enter>kdd
