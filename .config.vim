@@ -37,7 +37,6 @@ set background=light
 " -----------------------------------------------------------
 " SOURCING SETTING FILES:
 " -----------------------------------------------------------
-execute(':source '.g:plug_config_path.'/ack.vim')
 execute(':source '.g:plug_config_path.'/ale.vim')
 execute(':source '.g:plug_config_path.'/bookmarks.vim')
 execute(':source '.g:plug_config_path.'/closetag.vim')
@@ -48,6 +47,7 @@ execute(':source '.g:plug_config_path.'/nerd-tree.vim')
 execute(':source '.g:config_path.'/autocomplete.vim')
 execute(':source '.g:config_path.'/custom-commands.vim')
 execute(':source '.g:config_path.'/filebrowsing.vim')
+execute(':source '.g:config_path.'/find.vim')
 execute(':source '.g:config_path.'/findfiles.vim')
 execute(':source '.g:config_path.'/folding.vim')
 execute(':source '.g:config_path.'/formatter.vim')

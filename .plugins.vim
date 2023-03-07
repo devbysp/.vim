@@ -3,7 +3,6 @@
 " -----------------------------------------------------------
 call plug#begin(g:bundle_path)
     Plug 'https://github.com/MattesGroeger/vim-bookmarks'                       " Bokmarking rows
-    Plug 'https://github.com/mileszs/ack.vim'                                   " Search files (perl and ack has to be installed first on the operating system)
     Plug 'https://github.com/ashfinal/vim-colors-paper'                         " Color scheme: paper
     Plug 'https://github.com/tpope/vim-surround' 								" Surrounding ysiw)
     Plug 'https://github.com/tpope/vim-repeat', 								" Repeats surround commands
