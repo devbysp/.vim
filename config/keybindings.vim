@@ -45,10 +45,7 @@ nnoremap <C-k>a                 :AmendCommit<Enter>
 " -----------------------------------------------------------
 " FIND IN FILES:
 " -----------------------------------------------------------
-nnoremap <Leader>f              :Find<Space>
-nnoremap <Leader>fp             :FindProject<Space>
-nnoremap <Leader>ft             :FindTest<Space>
-nnoremap <Leader>fw             :Find<Space>"<cword>"<space>src<Enter>
+" no keybinding yet, see documention in config/find-in-files.vim
 
 " -----------------------------------------------------------
 " LSP:
