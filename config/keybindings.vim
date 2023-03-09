@@ -9,8 +9,6 @@ nnoremap <Leader>e              :NERDTreeFind<Enter>:noh<Enter>
 
 " Create and navigate tabs
 nnoremap <C-w>t                 :tabnew<Enter>
-nnoremap <C-h>                  :tabprevious<Enter>
-nnoremap <C-l>                  :tabnext<Enter>
 nnoremap <C-Left>               :tabprevious<Enter>
 nnoremap <C-Right>              :tabnext<Enter>
 
@@ -35,6 +33,7 @@ nnoremap <Leader>h              :noh<Enter>
 " ------------------------------------------------------------------------------
 nnoremap <C-d>                  :Diff<Enter>
 nnoremap <C-l>                  :Log<Enter>
+nnoremap <C-l>m                 :LogBranch origin/master<Enter>
 nnoremap <C-q>                  :History<Enter>
 nnoremap <C-q>l                 :HistoryForLine<Enter>
 nnoremap <C-g>                  :GitStatus<Enter>
