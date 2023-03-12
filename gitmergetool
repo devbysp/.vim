@@ -1,0 +1,28 @@
+#!/bin/bash
+# ---------------------------------------------------------------------
+#
+# Script to accept arguments sending in from git mergetool
+#
+# ---------------------------------------------------------------------
+#
+# Configuration:
+# 1. Copy this script to '/usr/local/bin' folder.
+# 2. Make it executable 'chmod +x gitmergetool'.
+# 3. Add following configurations to the '.gitconfig':
+#
+#   [merge]
+#       conflictstyle = diff3
+#       tool = gitmergetool
+#   [mergetool "gitmeretool"]
+#       cmd = gitmergetool \"$BASE\" \"$REMOTE\" \"$LOCAL\" \"$MERGED\"
+#   [mergetool]
+#	    keepBackup = false
+#
+# ---------------------------------------------------------------------
+
+echo "Base: $1"
+echo "Remote: $2"
+echo "Local: $3"
+echo "Merge: $4"
+
+vimdiff -c "wincmd J" "$4" "$3" "$1" "$2"
