@@ -44,7 +44,8 @@ nnoremap <C-k>a                 :AmendCommit<Enter>
 " -----------------------------------------------------------
 " FIND IN FILES:
 " -----------------------------------------------------------
-" no keybinding yet, see documention in config/find-in-files.vim
+nmap <leader>p <plug>(quickr_preview)
+nmap <leader>q <plug>(quickr_preview_qf_close)
 
 " -----------------------------------------------------------
 " LSP:
