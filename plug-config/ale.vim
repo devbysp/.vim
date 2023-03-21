@@ -8,15 +8,15 @@ let g:ale_fixers = {
 \   'javascriptreact': ['eslint', 'prettier'],
 \   'typescript': ['tslint', 'prettier'],
 \   'typescriptreact': ['tslint', 'prettier'],
-\   'java': [ 'uncrustify'],
-\   'html': [ 'prettier'],
-\   'css': [ 'prettier'],
-\   'json': [ 'fixjson']
+\   'java': ['uncrustify'],
+\   'html': ['prettier', 'fecs'],
+\   'css': ['stylelint', 'prettier', 'fecs'],
+\   'json': ['fixjson']
 \}
 
 let g:ale_linters = {
-\   'html': [ 'prettier'],
-\   'css': [ 'stylelint'],
+\   'html': ['prettier', 'fecs'],
+\   'css': ['prettier', 'fecs'],
 \   'typescript': ['tslint', 'tsserver'],
 \   'typescriptreact': ['tslint', 'tsserver'],
 \   'javascript': ['eslint', 'prettier'],
