@@ -9,14 +9,16 @@ let g:ale_fixers = {
 \   'typescript': ['tslint', 'prettier'],
 \   'typescriptreact': ['tslint', 'prettier'],
 \   'java': ['uncrustify'],
-\   'html': ['prettier', 'fecs'],
-\   'css': ['stylelint', 'prettier', 'fecs'],
+\   'markdown': ['prettier'],
+\   'html': ['prettier'],
+\   'css': ['prettier'],
 \   'json': ['fixjson']
 \}
 
 let g:ale_linters = {
-\   'html': ['prettier', 'fecs'],
-\   'css': ['prettier', 'fecs'],
+\   'markdown': ['prettier'],
+\   'html': ['prettier'],
+\   'css': ['prettier'],
 \   'typescript': ['tslint', 'tsserver'],
 \   'typescriptreact': ['tslint', 'tsserver'],
 \   'javascript': ['eslint', 'prettier'],
