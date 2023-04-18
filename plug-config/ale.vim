@@ -4,10 +4,10 @@
 "
 let g:ale_fixers = {
 \   '*': ['remove_trailing_lines', 'trim_whitespace'],
-\   'javascript': ['eslint', 'prettier'],
-\   'javascriptreact': ['eslint', 'prettier'],
-\   'typescript': ['tslint', 'prettier'],
-\   'typescriptreact': ['tslint', 'prettier'],
+\   'javascript': ['eslint'],
+\   'javascriptreact': ['eslint'],
+\   'typescript': ['tslint'],
+\   'typescriptreact': ['tslint'],
 \   'java': ['uncrustify'],
 \   'markdown': ['prettier'],
 \   'html': ['prettier'],
@@ -19,10 +19,10 @@ let g:ale_linters = {
 \   'markdown': ['prettier'],
 \   'html': ['prettier'],
 \   'css': ['prettier'],
-\   'typescript': ['tslint', 'tsserver'],
-\   'typescriptreact': ['tslint', 'tsserver'],
-\   'javascript': ['eslint', 'prettier'],
-\   'javascriptreact': ['eslint', 'prettier'],
+\   'typescript': ['tslint'],
+\   'typescriptreact': ['tslint'],
+\   'javascript': ['eslint'],
+\   'javascriptreact': ['eslint'],
 \}
 
 " -----------------------------------------------------------
