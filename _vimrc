@@ -13,6 +13,8 @@ let g:code_snippets_path=g:vim_path.'/code-snippets'                            
 " BASIC SETTINGS:
 " -----------------------------------------------------------
 set lines=80 columns=250
+set ff=unix                                                                     " LF only
+"set ff=dos                                                                     " LFCR
 
 set guioptions-=T                                                               " disables the toolbar
 set guioptions-=m                                                               " disables the toolbar
