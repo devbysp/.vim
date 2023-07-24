@@ -36,6 +36,8 @@ colorscheme paper
 set background=light
 "set background=dark
 
+set ff=unix                                                                     " Use unix line end char (LF)
+
 " -----------------------------------------------------------
 " SOURCING SETTING FILES:
 " -----------------------------------------------------------
