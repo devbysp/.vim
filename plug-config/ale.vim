@@ -12,7 +12,8 @@ let g:ale_fixers = {
 \   'markdown': ['prettier'],
 \   'html': ['prettier'],
 \   'css': ['prettier'],
-\   'json': ['fixjson']
+\   'json': ['fixjson'],
+\   'python': ['yapf']
 \}
 
 let g:ale_linters = {
@@ -23,6 +24,7 @@ let g:ale_linters = {
 \   'typescriptreact': ['tslint'],
 \   'javascript': ['eslint'],
 \   'javascriptreact': ['eslint'],
+\   'python': ['pyflakes', 'pycodestyle']
 \}
 
 " -----------------------------------------------------------

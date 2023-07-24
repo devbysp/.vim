@@ -13,7 +13,7 @@ call plug#begin(g:bundle_path)
     Plug 'https://github.com/christoomey/vim-conflicted'                        " Solve conflicts
     Plug 'https://github.com/junegunn/gv.vim'                                   " Git commit browser
     Plug 'https://github.com/itchyny/lightline.vim'                             " Status line
-    Plug 'https://github.com/dense-analysis/ale'                                " LSP client
+    Plug 'https://github.com/dense-analysis/ale'                                " LSP client (ale)
     Plug 'https://github.com/vim-scripts/loremipsum'                            " Loremipsum generator
     Plug 'https://github.com/alvan/vim-closetag'                                " Auto close html tags
     Plug 'https://github.com/mattn/emmet-vim'                                   " Html tag generator
