@@ -42,12 +42,6 @@ nnoremap <C-k>                  :Commit<Enter>
 nnoremap <C-k>a                 :AmendCommit<Enter>
 
 " -----------------------------------------------------------
-" FIND IN FILES:
-" -----------------------------------------------------------
-nmap <leader>p <plug>(quickr_preview)
-nmap <leader>q <plug>(quickr_preview_qf_close)
-
-" -----------------------------------------------------------
 " LSP:
 " -----------------------------------------------------------
 
@@ -70,6 +64,10 @@ nnoremap <Leader>p              :PreviousError<Enter>
 " Display
 nnoremap <Leader>dt             :Details<Enter>
 nnoremap <Leader>hv             :Hover<Enter>
+
+" -----------------------------------------------------------
+" QUICK FIX:
+" -----------------------------------------------------------
 nnoremap <Leader>qf             :QuickFix<Enter>:copen<Enter>
 nnoremap <leader>cf             :ClearQuickfixList<Enter>
 
