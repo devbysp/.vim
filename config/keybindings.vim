@@ -71,6 +71,7 @@ nnoremap <Leader>p              :PreviousError<Enter>
 nnoremap <Leader>dt             :Details<Enter>
 nnoremap <Leader>hv             :Hover<Enter>
 nnoremap <Leader>qf             :QuickFix<Enter>:copen<Enter>
+nnoremap <leader>cf             :ClearQuickfixList<Enter>
 
 " -----------------------------------------------------------
 " TERMINAL:

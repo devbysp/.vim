@@ -23,3 +23,10 @@ command! LF                     set ff=unix                                     
 command! Dos                    set ff=dos                                      " LF CR
 command! Windows                set ff=dos                                      " LF CR
 command! LFCR                   set ff=dos                                      " LF CR
+
+" Clear quickfix list
+function ClearQuickfixList()
+  call setqflist([])
+endfunction
+command! ClearQuickfixList call ClearQuickfixList()
+nmap <leader>cf :ClearQuickfixList<cr>
