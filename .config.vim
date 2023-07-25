@@ -2,9 +2,6 @@
 " BASIC SETTINGS:
 " -----------------------------------------------------------
 set encoding=utf-8
-set ff=unix                                                                     " LF only
-"set ff=dos                                                                     " LFCR
-
 set nowrap
 set number relativenumber                                                       " add line numbers
 
