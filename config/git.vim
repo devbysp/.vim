@@ -25,7 +25,7 @@ endfun
 command! Diff                   :vert Gdiffsplit
 
 " Log
-command! Log                    :GV --all
+command! Log                    :GV HEAD master origin/master
 command! -nargs=1 LogBranch     :GV HEAD <args>
 command! History                :call FileHistory("%")
 command! HistoryForLine         :call FileHistoryForCurrentLine("%", ".")
