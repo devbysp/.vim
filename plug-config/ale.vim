@@ -2,29 +2,48 @@
 " Linting JavaScripts And TypeScript:
 " -----------------------------------------------------------
 "
+" Install:
+"
+"  - tsserver:      npm install --global typescript
+"  - eslint:        npm install --global eslint
+"  - tslint:        npm install --global tslint
+"  - prettier:      npm install --global prettier
+"
+"  - fixjson:       npm install --global fixjson
+"  - vint:          npm install --global vint
+"
+"  - pylsp:         pip install python-lsp-server
+"  - ruff:          pip install ruff
+"  - pylint:        pip install pylint
+"
+"  - stdio:         npm install --global stdio
+"
+" -----------------------------------------------------------
+
 let g:ale_fixers = {
 \   '*': ['remove_trailing_lines', 'trim_whitespace'],
 \   'javascript': ['eslint'],
 \   'javascriptreact': ['eslint'],
 \   'typescript': ['tslint'],
 \   'typescriptreact': ['tslint'],
-\   'java': ['uncrustify'],
 \   'markdown': ['prettier'],
 \   'html': ['prettier'],
 \   'css': ['prettier'],
 \   'json': ['fixjson'],
-\   'python': ['yapf']
+\   'python': ['ruff']
 \}
 
 let g:ale_linters = {
+\   'javascript': ['tsserver', 'eslint'],
+\   'typescriptreact': ['tsserver', 'tslint'],
+\   'typescript': ['tsserver', 'tslint'],
+\   'javascriptreact': ['tsserver', 'eslint'],
+\   'java': ['stdio'],
 \   'markdown': ['prettier'],
 \   'html': ['prettier'],
 \   'css': ['prettier'],
-\   'typescript': ['tslint'],
-\   'typescriptreact': ['tslint'],
-\   'javascript': ['eslint'],
-\   'javascriptreact': ['eslint'],
-\   'python': ['pyflakes', 'pycodestyle']
+\   'python': ['pylsp', 'pylint'],
+\   'vim': ['vint']
 \}
 
 " -----------------------------------------------------------
