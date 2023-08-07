@@ -11,8 +11,11 @@
 "
 "  - fixjson:       npm install --global fixjson
 "
-"  - pylsp:         pip install python-lsp-server
-"  - ruff:          pip install ruff
+"  - pylsp:         pip install python-lsp-server   / pacman -S python-lsp-server
+"  - ruff:          pip install ruff                / pacman -S python-ruff
+"  - pylint:        pip install pylint              / pacman -S python-pylint
+"
+"  - stdio:         npm install --global stdio
 "
 " -----------------------------------------------------------
 
