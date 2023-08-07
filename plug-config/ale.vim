@@ -10,13 +10,9 @@
 "  - prettier:      npm install --global prettier
 "
 "  - fixjson:       npm install --global fixjson
-"  - vint:          npm install --global vint
 "
 "  - pylsp:         pip install python-lsp-server
 "  - ruff:          pip install ruff
-"  - pylint:        pip install pylint
-"
-"  - stdio:         npm install --global stdio
 "
 " -----------------------------------------------------------
 
@@ -38,12 +34,10 @@ let g:ale_linters = {
 \   'typescriptreact': ['tsserver', 'tslint'],
 \   'typescript': ['tsserver', 'tslint'],
 \   'javascriptreact': ['tsserver', 'eslint'],
-\   'java': ['stdio'],
 \   'markdown': ['prettier'],
 \   'html': ['prettier'],
 \   'css': ['prettier'],
-\   'python': ['pylsp', 'pylint'],
-\   'vim': ['vint']
+\   'python': ['pylsp', 'pylint']
 \}
 
 " -----------------------------------------------------------
