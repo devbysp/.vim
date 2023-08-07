@@ -3,6 +3,9 @@
 " -----------------------------------------------------------
 let mapleader = "-"                                                             " Map leader key
 
+" Alterntive to escape char
+inoremap jj                     <ESC>
+
 " Toggles file browsing window on and off
 nnoremap <C-e>                  :NERDTreeToggle<Enter>
 nnoremap <Leader>e              :NERDTreeFind<Enter>:noh<Enter>
