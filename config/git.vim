@@ -17,6 +17,14 @@ function! FileHistoryForCurrentLine(file, line)
     silent execute ":GV -L".line(a:line).",+1:".expand(a:file)
 endfun
 
+" Git log
+function! GitLogWindow()
+    execute ":vertical Git log --decorate --graph HEAD master origin/master"
+    setlocal winfixwidth
+    vertical resize 80
+endfun
+
+
 " -----------------------------------------------------------
 " CUSTOM COMMANDS:
 " -----------------------------------------------------------
@@ -25,7 +33,7 @@ endfun
 command! Diff                   :vert Gdiffsplit
 
 " Log
-command! Log                    :GV HEAD master origin/master
+command! Log                    :call GitLogWindow()
 command! -nargs=1 LogBranch     :GV HEAD <args>
 command! History                :call FileHistory("%")
 command! HistoryForLine         :call FileHistoryForCurrentLine("%", ".")
