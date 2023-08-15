@@ -43,6 +43,8 @@ nnoremap <C-g>                  :GitStatus<Enter>
 nnoremap <C-a>                  :Add<space>*<Enter>
 nnoremap <C-k>                  :Commit<Enter>
 nnoremap <C-k>a                 :AmendCommit<Enter>
+nnoremap <C-p>                  :Push<Enter>
+nnoremap <C-p>f                 :ForcePush<Enter>
 
 " -----------------------------------------------------------
 " LSP:
