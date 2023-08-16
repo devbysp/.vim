@@ -19,11 +19,17 @@ endfun
 
 " Git log
 function! GitLogWindow()
-    execute ":vertical Git log --decorate --graph HEAD master origin/master"
+    execute ":vertical Git log --decorate --graph --oneline HEAD master origin/master"
     setlocal winfixwidth
     vertical resize 80
 endfun
 
+" Git log all
+function! GitLogAllWindow()
+    execute ":vertical Git log --decorate --graph --oneline --all"
+    setlocal winfixwidth
+    vertical resize 80
+endfun
 
 " -----------------------------------------------------------
 " CUSTOM COMMANDS:
@@ -34,6 +40,7 @@ command! Diff                   :vert Gdiffsplit
 
 " Log
 command! Log                    :call GitLogWindow()
+command! LogAll                 :call GitLogAllWindow()
 command! -nargs=1 LogBranch     :GV HEAD <args>
 command! History                :call FileHistory("%")
 command! HistoryForLine         :call FileHistoryForCurrentLine("%", ".")

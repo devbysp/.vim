@@ -36,7 +36,7 @@ nnoremap <Leader>h              :noh<Enter>
 " ------------------------------------------------------------------------------
 nnoremap <C-d>                  :Diff<Enter>
 nnoremap <C-l>                  :Log<Enter>
-nnoremap <C-l>m                 :LogBranch origin/master<Enter>
+nnoremap <C-l>a                 :LogAll<Enter>
 nnoremap <C-q>                  :History<Enter>
 nnoremap <C-q>l                 :HistoryForLine<Enter>
 nnoremap <C-g>                  :GitStatus<Enter>
