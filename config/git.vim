@@ -19,16 +19,12 @@ endfun
 
 " Git log
 function! GitLogWindow()
-    execute ":vertical Git log --decorate --graph --oneline HEAD master origin/master"
-    setlocal winfixwidth
-    vertical resize 80
+    execute ":GV HEAD master origin/master"
 endfun
 
 " Git log all
 function! GitLogAllWindow()
-    execute ":vertical Git log --decorate --graph --oneline --all"
-    setlocal winfixwidth
-    vertical resize 80
+    execute ":GV --all"
 endfun
 
 " -----------------------------------------------------------
