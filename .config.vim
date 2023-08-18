@@ -22,12 +22,12 @@ set incsearch                                                                   
 set splitright                                                                  " split to the right of the current window
 set splitbelow                                                                  " split below the current window
 
-set cursorline
+"set cursorline
 "set cc=130                                                                     " set an 130 column border for good coding style
 
 packloadall
 
-colorscheme paper                                                               " colorscheme slate
+colorscheme slate                                                               " colorscheme slate
 set background=light                                                            " set background=dark
 
 " -----------------------------------------------------------
