@@ -23,8 +23,8 @@ let g:ale_fixers = {
 \   '*': ['remove_trailing_lines', 'trim_whitespace'],
 \   'javascript': ['eslint'],
 \   'javascriptreact': ['eslint'],
-\   'typescript': ['tslint'],
-\   'typescriptreact': ['tslint'],
+\   'typescript': ['eslint'],
+\   'typescriptreact': ['eslint'],
 \   'markdown': ['prettier'],
 \   'html': ['prettier'],
 \   'css': ['prettier'],
@@ -34,9 +34,9 @@ let g:ale_fixers = {
 
 let g:ale_linters = {
 \   'javascript': ['tsserver', 'eslint'],
-\   'typescriptreact': ['tsserver', 'tslint'],
-\   'typescript': ['tsserver', 'tslint'],
 \   'javascriptreact': ['tsserver', 'eslint'],
+\   'typescript': ['tsserver', 'eslint'],
+\   'typescriptreact': ['tsserver', 'eslint'],
 \   'markdown': ['prettier'],
 \   'html': ['prettier'],
 \   'css': ['prettier'],

@@ -1,5 +1,5 @@
 " Position of the prview window
-let g:quickr_preview_position = 'right'
+let g:quickr_preview_position = 'top'
 
 " Automatically open the preview window
 let g:quickr_preview_on_cursor = 1
