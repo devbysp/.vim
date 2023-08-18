@@ -5,8 +5,18 @@ let mapleader = "-"                                                             
 
 " Alterntive to escape char
 inoremap jj                     <ESC>l
-inoremap {}                     {<Enter>}<ESC>ko
-inoremap ()                     ()<ESC>i
+inoremap {                      {}<ESC>i
+inoremap {{                     {<Enter>}<ESC>k
+inoremap (                      ()<ESC>i
+inoremap ((                     ()<ESC>
+inoremap [                      []<ESC>i
+inoremap [[                     []<ESC>
+inoremap '                      ''<ESC>i
+inoremap ''                     ''<ESC>
+inoremap "                      ""<ESC>i
+inoremap ""                     ""<ESC>
+inoremap `                      ``<ESC>i
+inoremap ``                     `<Enter>`<ESC>k
 
 " Toggles file browsing window on and off
 nnoremap <C-e>                  :NERDTreeToggle<Enter>
