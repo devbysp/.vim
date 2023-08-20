@@ -12,7 +12,7 @@ filetype plugin indent on                                                       
 set autoread                                                                    " automatically loads external file changes
 
 set autoindent                                                                  " indent a new line the same amount as the line just typed
-set tabstop=4 softtabstop=0 expandtab shiftwidth=4 smarttab                     " tabulator behaviour
+set tabstop=2 softtabstop=0 expandtab shiftwidth=2 smarttab                     " tabulator behaviour
 
 set showmatch                                                                   " show matching
 set ignorecase                                                                  " case insensitive
@@ -22,13 +22,13 @@ set incsearch                                                                   
 set splitright                                                                  " split to the right of the current window
 set splitbelow                                                                  " split below the current window
 
-"set cursorline
-"set cc=130                                                                     " set an 130 column border for good coding style
+set cursorline
+set cc=130                                                                     " set an 130 column border for good coding style
 
 packloadall
 
-colorscheme slate                                                               " colorscheme slate
-set background=light                                                            " set background=dark
+colorscheme paper                                                               " colorscheme slate
+set background=dark                                                             " set background=dark
 
 " -----------------------------------------------------------
 " SOURCING SETTING FILES:
