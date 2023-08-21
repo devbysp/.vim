@@ -17,16 +17,6 @@ function! FileHistoryForCurrentLine(file, line)
     silent execute ":GV -L".line(a:line).",+1:".expand(a:file)
 endfun
 
-" Git log
-function! GitLogWindow()
-    execute ":GV HEAD master origin/master"
-endfun
-
-" Git log all
-function! GitLogAllWindow()
-    execute ":GV --all"
-endfun
-
 " -----------------------------------------------------------
 " CUSTOM COMMANDS:
 " -----------------------------------------------------------
@@ -35,8 +25,8 @@ endfun
 command! Diff                   :vert Gdiffsplit
 
 " Log
-command! Log                    :call GitLogWindow()
-command! LogAll                 :call GitLogAllWindow()
+command! Log                    :GV HEAD master origin/master
+command! LogAll                 :GV --all
 command! -nargs=1 LogBranch     :GV HEAD <args>
 command! History                :call FileHistory("%")
 command! HistoryForLine         :call FileHistoryForCurrentLine("%", ".")

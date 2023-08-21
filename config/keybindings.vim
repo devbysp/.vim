@@ -49,6 +49,7 @@ nnoremap <Leader>h              :noh<Enter>
 nnoremap <C-d>                  :Diff<Enter>
 nnoremap <C-l>                  :Log<Enter>
 nnoremap <C-l>a                 :LogAll<Enter>
+nnoremap <C-l>b                 :LogBranch
 nnoremap <C-q>                  :History<Enter>
 nnoremap <C-q>l                 :HistoryForLine<Enter>
 nnoremap <C-g>                  :GitStatus<Enter>
@@ -57,6 +58,7 @@ nnoremap <C-k>                  :Commit<Enter>
 nnoremap <C-k>a                 :AmendCommit<Enter>
 nnoremap <C-p>                  :Push<Enter>
 nnoremap <C-p>f                 :ForcePush<Enter>
+nnoremap <C-p>l                 :Pull<Enter>
 
 " -----------------------------------------------------------
 " LSP:
