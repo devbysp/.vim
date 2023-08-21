@@ -3,7 +3,7 @@
 " -----------------------------------------------------------
 set encoding=utf-8
 set nowrap
-set number relativenumber                                                       " add line numbers
+set number                                                                      " add line numbers
 
 syntax enable                                                                   " enable syntax and plugins (for netrw)
 filetype plugin on                                                              " reocgnizing the file type
@@ -23,7 +23,7 @@ set splitright                                                                  
 set splitbelow                                                                  " split below the current window
 
 set cursorline
-set cc=130                                                                     " set an 130 column border for good coding style
+# set cc=130                                                                    " set an 130 column border for good coding style
 
 packloadall
 
