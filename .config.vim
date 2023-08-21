@@ -23,7 +23,7 @@ set splitright                                                                  
 set splitbelow                                                                  " split below the current window
 
 set cursorline
-# set cc=130                                                                    " set an 130 column border for good coding style
+" set cc=130                                                                    " set an 130 column border for good coding style
 
 packloadall
 
