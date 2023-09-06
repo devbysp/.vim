@@ -8,15 +8,18 @@ inoremap jj                     <ESC>l
 inoremap {                      {}<ESC>i
 inoremap {{                     {<Enter>}<ESC>k
 inoremap (                      ()<ESC>i
-inoremap ((                     ()<ESC>
+inoremap ((                     (
 inoremap [                      []<ESC>i
-inoremap [[                     []<ESC>
+inoremap [[                     [
+inoremap <                      <><ESC>i
+inoremap <<                     <
 inoremap '                      ''<ESC>i
-inoremap ''                     ''<ESC>
+inoremap ''                     '
 inoremap "                      ""<ESC>i
-inoremap ""                     ""<ESC>
+inoremap ""                     "
 inoremap `                      ``<ESC>i
-inoremap ``                     `<Enter>`<ESC>k
+inoremap ``                     ```<Enter>```<ESC>kA
+
 
 " Toggles file browsing window on and off
 nnoremap <C-e>                  :NERDTreeToggle<Enter>
