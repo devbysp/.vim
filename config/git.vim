@@ -59,3 +59,7 @@ command! Apply                  :Git stash apply
 command! -nargs=1 StashShow     :Git stash show -p stash@{<args>}
 command! StashList              :Git stash list
 command! -nargs=1 StashDrop     :Git stash drop stash@{<args>}
+
+" Assume unchanged
+command! -nargs=1 AssumeUnchanged        :Git update-index --assume-unchanged <args>
+command! -nargs=1 NoAssumeUnchanged      :Git update-index --no-assume-unchanged <args>
