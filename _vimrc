@@ -12,8 +12,7 @@ let g:code_snippets_path=g:vim_path.'/code-snippets'                            
 " -----------------------------------------------------------
 " BASIC SETTINGS:
 " -----------------------------------------------------------
-set lines=40 columns=120                                                        " set lines=80 columns=250
-
+set lines=80 columns=250                                                        " set lines=40 columns=120
 
 set guioptions-=T                                                               " disables the toolbar
 set guioptions-=m                                                               " disables the toolbar
@@ -46,4 +45,4 @@ execute(':source '.g:vim_path.'/.config.vim')
 " Setting only for windows vim
 execute(':source '.g:plug_config_path.'/wvim-enhancements.vim')
 
-set background=light                                                          " set background=dark
+set background=dark                                                           " set background=dark
