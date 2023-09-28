@@ -9,6 +9,7 @@ command! Light                  set background=light
 " Resource files
 command! Keybindings            execute(':e '.g:config_path."/keybindings.vim")
 command! Vimrc                  execute(':e '.g:vimrc_path)
+command! Vim                    execute(':e '.g:vim_path)
 command! Source                 execute(':source '.g:vimrc_path)
 
 " Change line endings
