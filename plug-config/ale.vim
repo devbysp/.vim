@@ -4,9 +4,9 @@
 "
 " Install:
 "
-"  - tsserver:      npm install --global typescript
-"  - eslint:        npm install --global eslint
-"  - tslint:        npm install --global tslint
+"  - tsserver:      npm install --global typescript / LSP for javascript (tsserver)
+"  - eslint:        npm install --global eslint     / can be installed as dev dependency
+"  - tslint:        npm install --global tslint     / can be installed as dev dependency
 "  - prettier:      npm install --global prettier
 "
 "  - fixjson:       npm install --global fixjson
@@ -33,10 +33,10 @@ let g:ale_fixers = {
 \}
 
 let g:ale_linters = {
-\   'javascript': ['tsserver', 'eslint'],
-\   'javascriptreact': ['tsserver', 'eslint'],
-\   'typescript': ['tsserver', 'eslint'],
-\   'typescriptreact': ['tsserver', 'eslint'],
+\   'javascript': ['tsserver'],
+\   'javascriptreact': ['tsserver'],
+\   'typescript': ['tsserver'],
+\   'typescriptreact': ['tsserver'],
 \   'markdown': ['prettier'],
 \   'html': ['prettier'],
 \   'css': ['prettier'],
@@ -49,7 +49,6 @@ let g:ale_linters = {
 
 " Set this variable to 1 to fix files when you save them.
 let g:ale_fix_on_save = 1
-
 
 " When set to `1`, only the linters from |g:ale_linters| and |b:ale_linters|
 " will be enabled. The default behavior for ALE is to enable as many linters
