@@ -4,8 +4,8 @@
 call plug#begin(g:bundle_path)
     Plug 'https://github.com/MattesGroeger/vim-bookmarks'                       " Bokmarking rows
     Plug 'https://github.com/ashfinal/vim-colors-paper'                         " Color scheme: paper
-    Plug 'https://github.com/tpope/vim-surround' 								" Surrounding ysiw)
-    Plug 'https://github.com/tpope/vim-repeat', 								" Repeats surround commands
+    Plug 'https://github.com/tpope/vim-surround' 								                " Surrounding ysiw)
+    Plug 'https://github.com/tpope/vim-repeat', 								                " Repeats surround commands
 	  Plug 'https://github.com/preservim/nerdtree', { 'on': 'NERDTreeToggle' }    " Open file browse
     Plug 'https://github.com/junegunn/goyo.vim'                                 " Distraction free vim
     Plug 'https://github.com/tpope/vim-fugitive'                                " Git tool
