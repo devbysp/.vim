@@ -8,6 +8,8 @@
 "  - eslint:        npm install --global eslint     / can be installed as dev dependency
 "  - tslint:        npm install --global tslint     / can be installed as dev dependency
 "  - prettier:      npm install --global prettier
+"  - purescriptls:  npm install --global purescript-language-server
+"  - purty:         npm install --global purty
 "
 "  - fixjson:       npm install --global fixjson
 "
@@ -25,6 +27,7 @@ let g:ale_fixers = {
 \   'javascriptreact': ['eslint'],
 \   'typescript': ['eslint'],
 \   'typescriptreact': ['eslint'],
+\   'purescript': ['purty'],
 \   'markdown': ['prettier'],
 \   'html': ['prettier'],
 \   'css': ['prettier'],
@@ -37,6 +40,7 @@ let g:ale_linters = {
 \   'javascriptreact': ['tsserver'],
 \   'typescript': ['tsserver'],
 \   'typescriptreact': ['tsserver'],
+\   'purescript': ['purescriptls'],
 \   'markdown': ['prettier'],
 \   'html': ['prettier'],
 \   'css': ['prettier'],
@@ -114,6 +118,12 @@ let g:ale_set_signs = 1
 " floating window for ALEDetail output.
 let g:ale_detail_to_floating_preview = 1
 
+" Set the PureScript Language Server executable
+let g:ale_purescript_purs_executable = 'purescript-language-server'
+
+" Logs in console debug messges
+let g:ale_debug = 1
+
 " -----------------------------------------------------------
 " CUSTOM COMMANDS:
 " -----------------------------------------------------------
@@ -127,12 +137,12 @@ command! DefinitionSplit        :ALEGoToDefinition -split
 
 " You can jump back to the position you were at before going to a reference of
 " something with jump motions like CTRL-o. (CTRL+i jumps forward)
-command!  References            :ALEFindReferences -relative
+command! References             :ALEFindReferences -relative
 
 " -----------------------------------------------------------
 " Refactoring:
 " -----------------------------------------------------------
-command!  Rename                 :ALERename
+command! Rename                 :ALERename
 command! FileRename             :ALEFileRename
 command! Import                 :ALEImport
 command! CodeAction             :ALECodeAction

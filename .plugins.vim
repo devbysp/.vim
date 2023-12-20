@@ -18,6 +18,7 @@ call plug#begin(g:bundle_path)
     Plug 'https://github.com/alvan/vim-closetag'                                " Auto close html tags
     Plug 'https://github.com/mattn/emmet-vim'                                   " Html tag generator
     Plug 'https://github.com/ronakg/quickr-preview'                             " Preview quickfix list
+    Plug 'https://github.com/purescript-contrib/purescript-vim'                 " Purescript syntax highlighting
 call plug#end()
 
 " If bundle directory does not exists the run the PlugInstall command
