@@ -8,8 +8,6 @@
 "  - eslint:        npm install --global eslint     / can be installed as dev dependency
 "  - tslint:        npm install --global tslint     / can be installed as dev dependency
 "  - prettier:      npm install --global prettier
-"  - purescriptls:  npm install --global purescript-language-server
-"  - purty:         npm install --global purty
 "
 "  - fixjson:       npm install --global fixjson
 "
@@ -27,7 +25,6 @@ let g:ale_fixers = {
 \   'javascriptreact': ['eslint'],
 \   'typescript': ['eslint'],
 \   'typescriptreact': ['eslint'],
-\   'purescript': ['purty'],
 \   'markdown': ['prettier'],
 \   'html': ['prettier'],
 \   'css': ['prettier'],
@@ -40,7 +37,6 @@ let g:ale_linters = {
 \   'javascriptreact': ['tsserver'],
 \   'typescript': ['tsserver'],
 \   'typescriptreact': ['tsserver'],
-\   'purescript': ['purescriptls'],
 \   'markdown': ['prettier'],
 \   'html': ['prettier'],
 \   'css': ['prettier'],
