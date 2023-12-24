@@ -39,7 +39,6 @@ execute(':source '.g:plug_config_path.'/closetag.vim')
 execute(':source '.g:plug_config_path.'/light-line.vim')
 execute(':source '.g:plug_config_path.'/loremipsum.vim')
 execute(':source '.g:plug_config_path.'/nerd-tree.vim')
-execute(':source '.g:plug_config_path.'/prettify.vim')
 execute(':source '.g:plug_config_path.'/quickr-preview.vim')
 
 execute(':source '.g:config_path.'/autocomplete.vim')

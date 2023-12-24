@@ -25,6 +25,7 @@ let g:ale_fixers = {
 \   'javascriptreact': ['eslint'],
 \   'typescript': ['eslint'],
 \   'typescriptreact': ['eslint'],
+\   'purescript': ['purs-tidy'],
 \   'markdown': ['prettier'],
 \   'html': ['prettier'],
 \   'css': ['prettier'],
@@ -37,6 +38,7 @@ let g:ale_linters = {
 \   'javascriptreact': ['tsserver'],
 \   'typescript': ['tsserver'],
 \   'typescriptreact': ['tsserver'],
+\   'purescript': ['purescriptls'],
 \   'markdown': ['prettier'],
 \   'html': ['prettier'],
 \   'css': ['prettier'],
@@ -44,7 +46,7 @@ let g:ale_linters = {
 \}
 
 " -----------------------------------------------------------
-" General Configurations:
+" Ale Configurations:
 " -----------------------------------------------------------
 
 " Set this variable to 1 to fix files when you save them.
@@ -53,24 +55,20 @@ let g:ale_fix_on_save = 1
 " When set to `1`, only the linters from |g:ale_linters| and |b:ale_linters|
 " will be enabled. The default behavior for ALE is to enable as many linters
 " as possible, unless otherwise specified.
-let g:ale_linters_explicit = 1
+let g:ale_linters_explicit = 0
 
 " Automatic imports from external modules.
 let g:ale_completion_autoimport = 1
 
 " Enable completion where available.
-" This setting must be set before ALE is loaded.
-"
-" You should not turn this setting on if you wish to use ALE as a completion
-" source for other completion plugins, like Deoplete.
 let g:ale_completion_enabled = 1
 
 " ALE for displaying error information in the status bar.
-let g:airline#extensions#ale#enabled = 1
+let g:airline#extensions#ale#enabled = 0
 
 " Locallist list instead of the loclist
 let g:ale_open_list = 0
-let g:ale_set_loclist = 1
+let g:ale_set_loclist = 0
 let g:ale_set_quickfix = 0
 
 " Shows suggestions alog the error messages
@@ -81,7 +79,7 @@ let g:ale_lsp_suggestions = 1
 " tsserver available
 "
 " This feature is only supported in GUI versions of Vim.
-let g:ale_popup_menu_enabled = 1
+let g:ale_popup_menu_enabled = 0
 
 " If enabled, this option will tell tsserver to find and replace text in
 " comments when calling |ALERename
@@ -104,7 +102,7 @@ let g:ale_set_balloons = 1
 "  |ALEInfo.|        - Items with `'type': 'I'`
 "  |ALEStyleError|   - Items with `'type': 'E'` and `'sub_type': 'style'`
 "  |ALEStyleWarning| - Items with `'type': 'W'` and `'sub_type': 'style'`
-let g:ale_set_highlights = 1
+let g:ale_set_highlights = 0
 
 " When this option is set to `1`, the |sign| column will be populated with
 " signs marking where problems appear in the file.
@@ -112,13 +110,32 @@ let g:ale_set_signs = 1
 
 " When this option is set to `1`, Vim with |popupwin| will use a
 " floating window for ALEDetail output.
-let g:ale_detail_to_floating_preview = 1
-
-" Set the PureScript Language Server executable
-let g:ale_purescript_purs_executable = 'purescript-language-server'
+let g:ale_detail_to_floating_preview = 0
 
 " Logs in console debug messges
-let g:ale_debug = 1
+let g:ale_debug = 0
+
+" -----------------------------------------------------------
+" Vim LSP Configurations:
+" -----------------------------------------------------------
+
+" Enables a floating window of diagnostic error for the current line to status.
+let g:lsp_diagnostics_float_cursor = 1
+
+" Enables virtual text to be shown next to diagnostic errors.
+let g:lsp_diagnostics_virtual_text_enabled = 0
+
+" Enables echo of diagnostic error for the current line to status.
+let g:lsp_diagnostics_echo_cursor = 1
+
+" Enables semantic highlighting.
+let g:lsp_semantic_enabled = 1
+
+" Infer param names and type names
+let g:lsp_inlay_hints_enabled = 1
+let g:lsp_inlay_hints_mode = {
+\  'normal': ['curline'],
+\}
 
 " -----------------------------------------------------------
 " CUSTOM COMMANDS:

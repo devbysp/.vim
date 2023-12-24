@@ -21,8 +21,6 @@ call plug#begin(g:bundle_path)
     Plug 'https://github.com/purescript-contrib/purescript-vim'                 " Purescript syntax highlighting
     Plug 'https://github.com/prabirshrestha/vim-lsp'                            " LSP cli (vim-lsp)
     Plug 'https://github.com/mattn/vim-lsp-settings'                            " LSP cli settings (vim-lsp-settings)
-    Plug 'https://github.com/prabirshrestha/asyncomplete-lsp.vim'               " LSP cli (autocomplete)
-    Plug 'https://github.com/shun/ddc-vim-lsp'                                  " ?
 call plug#end()
 
 " If bundle directory does not exists the run the PlugInstall command
