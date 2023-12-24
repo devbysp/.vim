@@ -25,5 +25,3 @@ set udir=/tmp,/c/tmp,/c/temp
 " -----------------------------------------------------------
 execute(':source '.g:vim_path.'/.plugins.vim')
 execute(':source '.g:vim_path.'/.config.vim')
-
-set background=dark

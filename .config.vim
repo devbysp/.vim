@@ -27,8 +27,8 @@ set cursorline
 
 packloadall
 
-colorscheme slate                                                               " colorscheme paper
 set background=dark                                                             " set background=light
+colorscheme slate                                                               " colorscheme paper
 
 " -----------------------------------------------------------
 " SOURCING SETTING FILES:

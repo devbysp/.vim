@@ -128,9 +128,6 @@ let g:lsp_diagnostics_virtual_text_enabled = 0
 " Enables echo of diagnostic error for the current line to status.
 let g:lsp_diagnostics_echo_cursor = 1
 
-" Enables semantic highlighting.
-let g:lsp_semantic_enabled = 1
-
 " Infer param names and type names
 let g:lsp_inlay_hints_enabled = 1
 let g:lsp_inlay_hints_mode = {
