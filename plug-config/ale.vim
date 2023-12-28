@@ -120,13 +120,18 @@ let g:ale_debug = 0
 " -----------------------------------------------------------
 
 " Enables a floating window of diagnostic error for the current line to status.
-let g:lsp_diagnostics_float_cursor = 1
+let g:lsp_diagnostics_float_cursor = 0
+
+" Delay milliseconds to show diagnostic error for the current line to status
+" in a float window. Requires Enables float of diagnostic error for the
+" current line to status
+let g:lsp_diagnostics_float_delay = 500
 
 " Enables virtual text to be shown next to diagnostic errors.
 let g:lsp_diagnostics_virtual_text_enabled = 0
 
 " Enables echo of diagnostic error for the current line to status.
-let g:lsp_diagnostics_echo_cursor = 1
+let g:lsp_diagnostics_echo_cursor = 0
 
 " Infer param names and type names
 let g:lsp_inlay_hints_enabled = 1
