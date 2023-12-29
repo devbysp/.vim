@@ -46,6 +46,7 @@ nnoremap <C-a>                  :Add<space>*<Enter>
 nnoremap <C-k>                  :Commit<Enter>
 nnoremap <C-k>a                 :AmendCommit<Enter>
 nnoremap <C-p>                  :Push<Enter>
+nnoremap <C-p>u                 :Upstream<space>
 nnoremap <C-p>f                 :ForcePush<Enter>
 nnoremap <C-p>l                 :Pull<Enter>
 

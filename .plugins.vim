@@ -7,7 +7,8 @@ call plug#begin(g:bundle_path)
     Plug 'https://github.com/tpope/vim-surround' 								                " Surrounding ysiw)
     Plug 'https://github.com/tpope/vim-repeat', 								                " Repeats surround commands
 	  Plug 'https://github.com/preservim/nerdtree', { 'on': 'NERDTreeToggle' }    " Open file browse
-	  Plug 'https://github.com/tiagofumo/vim-nerdtree-syntax-highlight',          " File coloring and icons for nerd tree
+	  Plug 'https://github.com/tiagofumo/vim-nerdtree-syntax-highlight',          " File coloring for nerd tree
+	  Plug 'https://github.com/ryanoasis/vim-devicons',                           " Icons for nerd tree
     Plug 'https://github.com/junegunn/goyo.vim'                                 " Distraction free vim
     Plug 'https://github.com/tpope/vim-fugitive'                                " Git tool
     Plug 'https://github.com/mhinz/vim-signify'                                 " Git change marker
