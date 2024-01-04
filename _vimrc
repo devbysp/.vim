@@ -23,7 +23,7 @@ set guioptions-=l                                                               
 set guioptions-=L                                                               " left scrollbars off
 
 set nocompatible                                                                " enter the current millenium
-set guifont=Consolas:h12
+set guifont=UbuntuMono\ Nerd\ Font:h12
 
 " -----------------------------------------------------------
 " BACKUP CONFIGURATION:
@@ -45,4 +45,5 @@ execute(':source '.g:vim_path.'/.config.vim')
 " Setting only for windows vim
 execute(':source '.g:plug_config_path.'/wvim-enhancements.vim')
 
-set background=dark                                                           " set background=dark
+colorscheme paper
+set background=dark                                                           " set background=light

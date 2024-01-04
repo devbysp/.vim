@@ -3,8 +3,8 @@ let g:NERDTreeChDirMode = 2
 let g:NERDTreeMinimalMenu = 0
 let g:NERDTreeCascadeSingleChildDir = 0
 let g:NERDTreeQuitOnOpen = 1
-let g:NERDTreeDirArrowExpandable = '▶'
-let g:NERDTreeDirArrowCollapsible = '▼'
+let g:NERDTreeDirArrowExpandable = ''
+let g:NERDTreeDirArrowCollapsible = ''
 
 let s:brown = "905532"
 let s:aqua =  "3AFFDB"
