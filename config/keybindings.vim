@@ -36,6 +36,7 @@ nnoremap <Leader>h              :noh<Enter>
 " ------------------------------------------------------------------------------
 nnoremap <C-d>                  :Diff<Enter>
 nnoremap <C-l>                  :Log<Enter>
+nnoremap <C-l>m                 :LogMaster<Enter>
 nnoremap <C-l>f                 :LogFiles<Enter>
 nnoremap <C-l>a                 :LogAll<Enter>
 nnoremap <C-l>b                 :LogBranch

@@ -25,8 +25,9 @@ endfun
 command! Diff                   :vert Gdiffsplit
 
 " Log
-command! Log                    :GV HEAD master origin/master
-command! LogFiles               :GV HEAD --name-status master origin/master
+command! Log                    :GV HEAD
+command! LogMaster              :GV HEAD master origin/master
+command! LogFiles               :GV HEAD --name-status
 command! LogAll                 :GV --all
 command! -nargs=1 LogBranch     :GV HEAD <args>
 command! History                :call FileHistory("%")
