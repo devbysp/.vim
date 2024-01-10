@@ -1,11 +1,11 @@
 " Position of the prview window
-let g:quickr_preview_position = 'top'
+let g:quickr_preview_position = 'right'
 
 " Automatically open the preview window
 let g:quickr_preview_on_cursor = 1
 
 " Auto close quickfix on enter
-let g:quickr_preview_exit_on_enter = 1
+let g:quickr_preview_exit_on_enter = 0
 
 " Allow modifications in the preview window
 let g:quickr_preview_modifiable = 1

@@ -79,7 +79,7 @@ nnoremap <Leader>hv             :Hover<Enter>
 " QUICK FIX:
 " -----------------------------------------------------------
 nnoremap <Leader>qf             :QuickFix<Enter>:copen<Enter>
-nnoremap <leader>cf             :ClearQuickfixList<Enter>
+nnoremap <leader>q              :ClearQuickfixList<Enter>
 
 " -----------------------------------------------------------
 " TERMINAL:
