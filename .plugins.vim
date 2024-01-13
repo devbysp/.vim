@@ -24,7 +24,7 @@ call plug#begin(g:bundle_path)
     Plug 'https://github.com/prabirshrestha/vim-lsp'                            " LSP cli (vim-lsp)
     Plug 'https://github.com/mattn/vim-lsp-settings'                            " LSP cli settings (vim-lsp-settings)
    "Plug 'https://github.com/github/copilot.vim'                                " OpenAI Codex to suggest code and entire functions in real-time / requires python3 and openai-cli
-    Plug 'https://github.com/CoderCookE/vim-chatgpt'                            " ChatGPT plugin / requires python3 and openai-cli
+   "Plug 'https://github.com/CoderCookE/vim-chatgpt'                            " ChatGPT plugin / requires python3 and openai-cli
    "Plug 'https://github.com/madox2/vim-ai'                                     " Chat GTP suppor / requires python3 and openai-cli
 call plug#end()
 
