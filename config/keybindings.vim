@@ -92,7 +92,6 @@ nnoremap <C-t>                  :call TerminalWindow()<Enter>
 " nnoremap <Leader>p            :call Prettier("%")<Enter><Enter>
 
 " -----------------------------------------------------------
-" SNIPPESTS:
+" EMMET:
 " -----------------------------------------------------------
-" Using emmet plugint instead. Hotkey is the same.
-" inoremap <C-y>                  <ESC>:execute(':r '.g:code_snippets_path.'/<cword>')<Enter>kdd
+" Leader key: <Leader>m
