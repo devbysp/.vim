@@ -8,7 +8,7 @@ let g:quickr_preview_on_cursor = 1
 let g:quickr_preview_exit_on_enter = 0
 
 " Allow modifications in the preview window
-let g:quickr_preview_modifiable = 1
+let g:quickr_preview_modifiable = 0
 
 " Disable quick preview keybindings
 let g:quickr_preview_keymaps = 0
