@@ -13,7 +13,9 @@ nnoremap <Leader>e              :NERDTreeFind<Enter>:noh<Enter>
 " Create and navigate tabs
 nnoremap <C-w>t                 :tabnew<Enter>
 nnoremap <C-Left>               :tabprevious<Enter>
+nnoremap <C-h>                  :tabprevious<Enter>
 nnoremap <C-Right>              :tabnext<Enter>
+nnoremap <C-l>                  :tabnext<Enter>
 
 " Save & exit
 nnoremap <C-s>                  :w<Enter>
@@ -34,13 +36,13 @@ nnoremap <Leader>h              :noh<Enter>
 nnoremap <C-d>                  :Diff<Enter>
 
 " Log
-nnoremap <C-l>                  :Log<Enter>
-nnoremap <C-l>m                 :LogMaster<Enter>
-nnoremap <C-l>f                 :LogFiles<Enter>
-nnoremap <C-l>a                 :LogAll<Enter>
-nnoremap <C-l>b                 :LogBranch
 nnoremap <C-q>                  :History<Enter>
 nnoremap <C-q>l                 :HistoryForLine<Enter>
+nnoremap <Leader>l              :Log<Enter>
+nnoremap <Leader>lm             :LogMaster<Enter>
+nnoremap <Leader>lf             :LogFiles<Enter>
+nnoremap <Leader>la             :LogAll<Enter>
+nnoremap <Leader>lb             :LogBranch<space>
 
 " Commit
 nnoremap <C-g>                  :GitStatus<Enter>
