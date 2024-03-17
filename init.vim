@@ -20,5 +20,5 @@ set udir=/tmp,/c/tmp,/c/temp
 " -----------------------------------------------------------
 " SETTINGS:
 " -----------------------------------------------------------
-execute(':source '.g:config_path.'/vim/.config.vim')
+execute(':source '.g:config_path.'/nvim/.config.vim')
 execute(':source '.g:plug_config_path.'/.plugins.vim')
