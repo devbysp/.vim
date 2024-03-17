@@ -20,11 +20,11 @@ augroup qf
 
     " do :cwindow if the quickfix command doesn't start
     " with a 'l' (:grep, :make, etc.)
-    autocmd QuickFixCmdPost [^l]* cwindow 20
+    autocmd QuickFixCmdPost [^l]* cwindow 15
 
     " do :lwindow if the quickfix command starts with
     " a 'l' (:lgrep, :lmake, etc.)
-    autocmd QuickFixCmdPost l*    lwindow 20
+    autocmd QuickFixCmdPost l*    lwindow 15
 augroup END
 
 " Clear quickfix list

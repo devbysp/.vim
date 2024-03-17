@@ -28,9 +28,6 @@ set guifont=UbuntuMono\ Nerd\ Font:h12
 " -----------------------------------------------------------
 " BACKUP CONFIGURATION:
 " -----------------------------------------------------------
-set noswapfile                                                                  " disable creating swap file
-set nobackup nowritebackup                                                      " disable backup files
-
 set dir=c:\\tmp,c:\\temp
 set backupdir=c:\\tmp,c:\\temp
 set udf
@@ -39,11 +36,8 @@ set udir=c:\\tmp,c:\\temp
 " -----------------------------------------------------------
 " SETTINGS:
 " -----------------------------------------------------------
-execute(':source '.g:vim_path.'/.plugins.vim')
-execute(':source '.g:vim_path.'/.config.vim')
+execute(':source '.g:config_path.'/vim/.config.vim')
+execute(':source '.g:plug_config_path.'/.plugins.vim')
 
 " Setting only for windows vim
 execute(':source '.g:plug_config_path.'/wvim-enhancements.vim')
-
-colorscheme paper
-set background=dark                                                           " set background=light

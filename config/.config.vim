@@ -21,34 +21,26 @@ set hlsearch                                                                    
 set incsearch                                                                   " incremental search
 set splitright                                                                  " split to the right of the current window
 set splitbelow                                                                  " split below the current window
+set cursorline                                                                  " current line is highlited
+"set cc=130                                                                     " set an 130 column border for good coding style
 
-set cursorline
-" set cc=130                                                                    " set an 130 column border for good coding style
+set noundofile                                                                  " disable creating undo file
+set noswapfile                                                                  " disable creating swap file
+set nobackup                                                                    " disable backup files
+set nowritebackup                                                               " disable write backup files
 
 packloadall
 
+colorscheme slate                                                               " colorscheme slate
 set background=dark                                                             " set background=light
-colorscheme slate                                                               " colorscheme paper
 
 " -----------------------------------------------------------
 " SOURCING SETTING FILES:
 " -----------------------------------------------------------
-execute(':source '.g:plug_config_path.'/ale.vim')
-execute(':source '.g:plug_config_path.'/bookmarks.vim')
-execute(':source '.g:plug_config_path.'/closetag.vim')
-execute(':source '.g:plug_config_path.'/light-line.vim')
-execute(':source '.g:plug_config_path.'/loremipsum.vim')
-execute(':source '.g:plug_config_path.'/nerd-tree.vim')
-execute(':source '.g:plug_config_path.'/quickr-preview.vim')
-execute(':source '.g:plug_config_path.'/startify.vim')
-
-execute(':source '.g:config_path.'/autocomplete.vim')
+execute(':source '.g:config_path.'/built-in-filebrowser.vim')
 execute(':source '.g:config_path.'/custom-commands.vim')
-execute(':source '.g:config_path.'/filebrowsing.vim')
 execute(':source '.g:config_path.'/find-in-files.vim')
 execute(':source '.g:config_path.'/findfiles.vim')
 execute(':source '.g:config_path.'/folding.vim')
-execute(':source '.g:config_path.'/formatter.vim')
 execute(':source '.g:config_path.'/git.vim')
 execute(':source '.g:config_path.'/keybindings.vim')
-execute(':source '.g:config_path.'/terminal.vim')

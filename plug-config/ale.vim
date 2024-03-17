@@ -61,15 +61,15 @@ let g:ale_linters_explicit = 0
 let g:ale_completion_autoimport = 1
 
 " Enable completion where available.
-let g:ale_completion_enabled = 1
+let g:ale_completion_enabled = 0 " Using copilot instead
 
 " ALE for displaying error information in the status bar.
-let g:airline#extensions#ale#enabled = 0
+let g:airline#extensions#ale#enabled = 1
 
 " Locallist list instead of the loclist
 let g:ale_open_list = 0
 let g:ale_set_loclist = 0
-let g:ale_set_quickfix = 0
+let g:ale_set_quickfix = 1
 
 " Shows suggestions alog the error messages
 let g:ale_lsp_suggestions = 1

@@ -1,6 +1,6 @@
-let g:startify_custom_indices = ['f', 'd', 's', 'a']
 let g:startify_files_number = 4
 let g:startify_relative_path = 0
+let g:startify_custom_indices = ['f', 'd', 's', 'a']
 
 let g:startify_lists = [
       \ { 'type': 'files',     'header': ['   Most recently used files']            },
@@ -9,5 +9,5 @@ let g:startify_lists = [
       \ ]
 
 let g:startify_bookmarks = [
-      \ {'j': '~/.vimrc'},
+      \ {'j': '~/.config/nvim/init.vim'},
       \ ]
