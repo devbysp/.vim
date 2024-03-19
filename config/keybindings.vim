@@ -55,7 +55,7 @@ nnoremap <C-p>                  :Push<Enter>
 nnoremap <C-p>u                 :Upstream<space>
 nnoremap <C-p>f                 :ForcePush<Enter>
 nnoremap <C-p>l                 :Pull<Enter>
-nnoremap <C-p>f                 :Fetch<Enter>
+nnoremap <C-p>t                 :Fetch<Enter>
 
 " Blame
 nnoremap <C-q>b                 :Blame<Enter>
