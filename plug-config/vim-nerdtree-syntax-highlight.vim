@@ -20,6 +20,7 @@ let s:gray = "AAAAAA"
 
 
 let s:image = s:green
+let s:test = s:lightGreen
 let s:config = s:red
 let s:style = s:lightPurple
 let s:generated = s:gray
@@ -66,3 +67,5 @@ let g:NERDTreePatternMatchHighlightColor['[_\.]vimrc$'] = s:config
 let g:NERDTreePatternMatchHighlightColor['package[\-a-z]*.json$'] = s:config
 let g:NERDTreePatternMatchHighlightColor['.*config.*'] = s:config
 let g:NERDTreePatternMatchHighlightColor['.*plugins.*.vim'] = s:config
+let g:NERDTreePatternMatchHighlightColor['.*\.test\..*'] = s:test
+let g:NERDTreePatternMatchHighlightColor['.*\.spec\..*'] = s:test
