@@ -38,6 +38,3 @@ set udir=c:\\tmp,c:\\temp
 " -----------------------------------------------------------
 execute(':source '.g:config_path.'/vim/.config.vim')
 execute(':source '.g:plug_config_path.'/.plugins.vim')
-
-" Setting only for windows vim
-execute(':source '.g:plug_config_path.'/wvim-enhancements.vim')
